@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -16,10 +15,7 @@ import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
-import { GridItem } from '../components/grid-item';
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
-import thumbYouTube from '../public/images/links/youtube.png';
-import thumbInkdrop from '../public/images/projects/inkdrop_eyecatch.png';
 import Image from 'next/image';
 
 const ProfileImage = chakra(Image, {
@@ -37,7 +33,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a full-stack software engineer from Sydney!
+        Passionate web developer from Sydney, Australia!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -45,7 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Nam Dao
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Full-Stack Software Engineer at Eucalyptus</p>
         </Box>
         <Box
           flexShrink={0}
@@ -76,29 +72,18 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About me 😎
         </Heading>
         <Paragraph>
-          Oh hi there, I see you&apos;re reading my bio ... I guess I&apos;ll
-          have to keep it interesting 😉 The &apos;boring&apos; stuff first: 📌
-          Full-Stack Nodejs Developer 📌 AWS Certified Cloud Practitioner &
-          Solutions Architect 📌 USYD - B. Advanced Computing 📌 Founded an
-          off-the-book gaming startup in the cloud when I was 15. I grew it to
-          3400 customers and raised $50k by 2020. Who am I? I am a tech-savvy
-          software engineer with a flair of leadership. At heart, I have a
-          passion for building things - web apps, APIs, automated CI pipeline
-          ... if it&apos;s tech, you name it! And I&apos;ll deliver. With a
-          plethora of experience in the full-stack development space, I am
-          always down to build cool new things 🚀
-          <NextLink href="/projects/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+          Hi, I&apos;m Nam, from Vietnam. I am currently living in Sydney
+          Australia, working on improving the telehealth scene in Australia at
+          Eucalyptus.
+          <br />
+          But who am I? I am a tech-savvy software engineer with a flair of
+          leadership. At heart, I have a passion for building things - web apps,
+          APIs, automated CI pipeline ... if it&apos;s tech, you name it! And
+          I&apos;ll deliver. With a plethora of experience in the full-stack
+          development space, I am always down to build cool new things 🚀
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
@@ -114,39 +99,55 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2000</BioYear>
+          Born in Hanoi, Vietnam
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2004</BioYear>
+          Relocated to Japan, Kusatsu (草津町)
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2011</BioYear>
+          Relocated to Australia, Gold Coast
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear>2015</BioYear>
+          Started Risen Network, a gaming network based in Los Angeles and
+          Sydney for Unturned. Eventually, I grew it to 3400 members on the{' '}
+          <Link
+            href="https://discord.gg/RXcGyWd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Discord
+          </Link>{' '}
+          and raised $50k via the e-commerce site.
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Worked at Supercool Asia Pacific
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Worked at Telstra
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Dropped out of The University of Sydney after perusing my Bachelors of
+          Advanced Computing (Software Development) for 3 years.
+        </BioSection>
+        <BioSection>
+          <BioYear>2021 to present</BioYear>
+          Working at Eucalyptus
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Things I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Music, Netflix, Gym, Walking my dog, Any pets, Nightout in the city
         </Paragraph>
       </Section>
 
@@ -156,75 +157,21 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link
+              href="https://github.com/namdao2000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                @namdao2000
               </Button>
             </Link>
           </ListItem>
         </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>
