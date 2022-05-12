@@ -62,7 +62,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/nam.jpg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -199,17 +199,17 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem href="https://www.inkdrop.app/" title="Inkdrop">
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
+        {/*<SimpleGrid columns={[1, 2, 2]} gap={6}>*/}
+        {/*  <GridItem*/}
+        {/*    href="https://www.youtube.com/devaslife"*/}
+        {/*    title="Dev as Life"*/}
+        {/*  >*/}
+        {/*    My YouTube channel (&gt;100k subs)*/}
+        {/*  </GridItem>*/}
+        {/*  <GridItem href="https://www.inkdrop.app/" title="Inkdrop">*/}
+        {/*    A Markdown note-taking app*/}
+        {/*  </GridItem>*/}
+        {/*</SimpleGrid>*/}
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
