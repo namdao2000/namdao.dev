@@ -19,10 +19,8 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Nam Dao" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Takuya Matsuyama" />
+        <meta name="twitter:title" content="Nam Dao" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
         <meta name="twitter:image" content="https://www.namdao.dev/card.png" />
         <meta property="og:site_name" content="Nam Dao" />
         <meta name="og:title" content="Nam Dao" />
