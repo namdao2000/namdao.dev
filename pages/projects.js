@@ -3,7 +3,9 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
 
-import thumbInkdrop from '../public/images/projects/inkdrop_eyecatch.png';
+import thumbMyDiary from '../public/images/projects/my-diary-eyecatch.png';
+import thumbDaoOnboarding from '../public/images/projects/dao-onboarding-eyecatch.png';
+import thumbSSO from '../public/images/projects/sso-eyecatch.png';
 
 const Projects = () => (
   <Layout title="Projects">
@@ -14,20 +16,27 @@ const Projects = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem
+            id="dao-onboarding"
+            title="DAO Onboarding"
+            thumbnail={thumbDaoOnboarding}
+          >
+            12 hours challenge - a mockup onboarding platform for DAO
+            organization
           </WorkGridItem>
         </Section>
-        {/*<Section>*/}
-        {/*  <WorkGridItem*/}
-        {/*    id="walknote"*/}
-        {/*    title="walknote"*/}
-        {/*    thumbnail={thumbWalknote}*/}
-        {/*  >*/}
-        {/*    Music recommendation app for iOS*/}
-        {/*  </WorkGridItem>*/}
-        {/*</Section>*/}
+        <Section>
+          <WorkGridItem id="sso" title="SSO" thumbnail={thumbSSO}>
+            Serverless Single Sign-on (SSO) service implemented using CloudFlare
+            workers
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="my-diary" title="My Diary" thumbnail={thumbMyDiary}>
+            A Diary note-taking web app with live publish, live update and
+            always online
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
     </Container>
   </Layout>

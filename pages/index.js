@@ -112,7 +112,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2015</BioYear>
-          Started Risen Network, a gaming network based in Los Angeles and
+          Started Risen Network, a gaming community based in Los Angeles and
           Sydney for Unturned. Eventually, I grew it to 3400 members on the{' '}
           <Link
             href="https://discord.gg/RXcGyWd"
