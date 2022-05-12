@@ -12,6 +12,7 @@ export const DogSpinner = () => (
   />
 );
 
+// eslint-disable-next-line react/display-name
 export const DogContainer = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
