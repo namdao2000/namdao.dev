@@ -76,7 +76,7 @@ const Navbar = (props) => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/namdao2000"
+            href="https://github.com/namdao2000/namdao.dev"
             rel="noopener noreferrer"
             path={path}
             display="inline-flex"
@@ -107,7 +107,10 @@ const Navbar = (props) => {
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href="https://github.com/namdao2000">
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/namdao2000/namdao.dev"
+                >
                   View Source
                 </MenuItem>
               </MenuList>
