@@ -2,7 +2,6 @@
   "name": "namdao.dev",
   "version": "1.0.0",
   "description": "Nan's personal website",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev -H 0.0.0.0",
@@ -21,7 +20,9 @@
     "framer-motion": "^6.3.3",
     "next": "^12.1.6",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.3.1",
+    "three": "^0.140.2"
   },
   "devDependencies": {
     "eslint": "^8.15.0",
