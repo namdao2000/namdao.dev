@@ -18,6 +18,8 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { GridItem } from '../components/grid-item';
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
+import thumbYouTube from '../public/images/links/youtube.png';
+import thumbInkdrop from '../public/images/projects/inkdrop_eyecatch.png';
 import Image from 'next/image';
 
 const ProfileImage = chakra(Image, {
@@ -88,7 +90,7 @@ const Home = () => (
           ... if it&apos;s tech, you name it! And I&apos;ll deliver. With a
           plethora of experience in the full-stack development space, I am
           always down to build cool new things 🚀
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
+          <NextLink href="/projects/inkdrop" passHref scroll={false}>
             <Link>Inkdrop</Link>
           </NextLink>
           . He publishes content for marketing his products and his YouTube
@@ -99,7 +101,7 @@ const Home = () => (
           &quot; has more than 100k subscribers.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
+          <NextLink href="/projects" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
             </Button>
@@ -199,17 +201,22 @@ const Home = () => (
           </ListItem>
         </List>
 
-        {/*<SimpleGrid columns={[1, 2, 2]} gap={6}>*/}
-        {/*  <GridItem*/}
-        {/*    href="https://www.youtube.com/devaslife"*/}
-        {/*    title="Dev as Life"*/}
-        {/*  >*/}
-        {/*    My YouTube channel (&gt;100k subs)*/}
-        {/*  </GridItem>*/}
-        {/*  <GridItem href="https://www.inkdrop.app/" title="Inkdrop">*/}
-        {/*    A Markdown note-taking app*/}
-        {/*  </GridItem>*/}
-        {/*</SimpleGrid>*/}
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            href="https://www.youtube.com/devaslife"
+            title="Dev as Life"
+            thumbnail={thumbYouTube}
+          >
+            My YouTube channel (&gt;100k subs)
+          </GridItem>
+          <GridItem
+            href="https://www.inkdrop.app/"
+            title="Inkdrop"
+            thumbnail={thumbInkdrop}
+          >
+            A Markdown note-taking app
+          </GridItem>
+        </SimpleGrid>
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
