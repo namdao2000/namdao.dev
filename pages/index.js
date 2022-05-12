@@ -15,7 +15,12 @@ import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin,
+} from 'react-icons/io5';
 import Image from 'next/image';
 
 const ProfileImage = chakra(Image, {
@@ -72,7 +77,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          About me 😎
+          About
         </Heading>
         <Paragraph>
           Hi, I&apos;m Nam, from Vietnam. I am currently living in Sydney
@@ -168,6 +173,21 @@ const Home = () => (
                 leftIcon={<IoLogoGithub />}
               >
                 @namdao2000
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/namdao-au/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                @namdao-au
               </Button>
             </Link>
           </ListItem>
