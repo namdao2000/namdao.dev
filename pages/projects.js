@@ -33,7 +33,7 @@ const Projects = () => (
         </Section>
         <Section>
           <WorkGridItem id="my-diary" title="My Diary" thumbnail={thumbMyDiary}>
-            A Diary note-taking web app with live publish, live update and
+            A diary note-taking web app with live publishing, live update and is
             always online
           </WorkGridItem>
         </Section>
