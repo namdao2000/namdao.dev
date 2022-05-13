@@ -76,8 +76,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Hi, I&apos;m Nam, from Vietnam. I am currently living in Sydney
-          Australia, working on improving the telehealth scene in Australia at
-          Eucalyptus.
+          Australia, working on improving the telehealth scene at Eucalyptus.
           <br />
           But who am I? I am a tech-savvy software engineer with a flair of
           leadership. At heart, I have a passion for building things - web apps,
