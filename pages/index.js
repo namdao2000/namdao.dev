@@ -104,11 +104,11 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2004</BioYear>
-          Relocated to Japan, Kusatsu (草津町)
+          Relocated to Kusatsu (草津町), Japan
         </BioSection>
         <BioSection>
           <BioYear>2011</BioYear>
-          Relocated to Australia, Gold Coast
+          Relocated to Gold Coast, Australia
         </BioSection>
         <BioSection>
           <BioYear>2015</BioYear>
@@ -133,7 +133,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
-          Dropped out of The University of Sydney after perusing my Bachelors of
+          Dropped out of The University of Sydney after pursuing my Bachelors of
           Advanced Computing (Software Development) for 3 years.
         </BioSection>
         <BioSection>
