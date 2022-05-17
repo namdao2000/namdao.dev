@@ -11,7 +11,7 @@ const Work = () => (
         DAO Onboarding <Badge>2022</Badge>
       </Title>
       <P>
-        This was a 12 hours challenge, to build a mockup onboarding platform for
+        This was a 12 hour challenge, to build a mockup onboarding platform for
         DAO organization
       </P>
       <List ml={4} my={4}>
