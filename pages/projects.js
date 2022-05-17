@@ -21,7 +21,7 @@ const Projects = () => (
             title="DAO Onboarding"
             thumbnail={thumbDaoOnboarding}
           >
-            12 hours challenge - a mockup onboarding platform for DAO
+            12 hour challenge - a mockup onboarding platform for DAO
             organization
           </WorkGridItem>
         </Section>
@@ -33,8 +33,8 @@ const Projects = () => (
         </Section>
         <Section>
           <WorkGridItem id="my-diary" title="My Diary" thumbnail={thumbMyDiary}>
-            A diary note-taking web app with live publishing, live update and is
-            always online
+            A google doc like diary note-taking web app with publishing and
+            auto-save
           </WorkGridItem>
         </Section>
       </SimpleGrid>
