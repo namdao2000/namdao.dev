@@ -5,7 +5,6 @@ import {
   List,
   ListItem,
   SimpleGrid,
-  Box,
 } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, WorkImage, Meta, MobileImage } from '../../components/work';
