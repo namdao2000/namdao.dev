@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item';
 
 import thumbMyDiary from '../public/images/projects/my-diary-eyecatch.png';
 import thumbDaoOnboarding from '../public/images/projects/dao-onboarding-eyecatch.png';
+import cryptoAlerts from '../public/images/projects/crypto-alerts-eyecatch.png';
 import thumbSSO from '../public/images/projects/sso-eyecatch.png';
 
 const Projects = () => (
@@ -15,6 +16,16 @@ const Projects = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id="crypto-alerts"
+            title="Crypto Alerts"
+            thumbnail={cryptoAlerts}
+          >
+            2.5 Day shippit challenge - a crypto currency alerting tool with
+            email/SMS functionality.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="dao-onboarding"
